@@ -56,6 +56,26 @@ public class Anfibio extends Animal{
 		
 		return (salamandra);
 	}
+	
+	public static int getRanas() {
+		
+		return(ranas);
+	}
+	
+	public static int getSalamandras() {
+		
+		return(salamandras);
+	}
+	
+	public String getColorPiel () {
+		
+		return (this.colorPiel);
+	}
+	
+	public boolean isVenenoso() {
+		
+		return (this.venenoso);
+	}
 
 
 }
