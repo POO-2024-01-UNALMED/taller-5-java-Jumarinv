@@ -42,5 +42,10 @@ public class Zoologico {
 		return(this.nombre);
 	}
 	
+	public String getUbicacion () {
+		
+		return(this.ubicacion);
+	}
+	
 
 }
