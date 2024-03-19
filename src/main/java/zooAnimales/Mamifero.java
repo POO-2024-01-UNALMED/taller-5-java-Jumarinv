@@ -40,5 +40,25 @@ public class Mamifero extends Animal{
 		listado.add(leon);
 		leones ++;
 	}
+	
+	public static int getCaballos() {
+		
+		return(caballos);
+	}
+	
+	public static int getLeones() {
+		
+		return(leones);
+	}
+	
+	public boolean getPelaje() {
+		
+		return (this.pelaje);
+	}
+	
+	public int getPatas() {
+		
+		return (this.patas);
+	}
 
 }

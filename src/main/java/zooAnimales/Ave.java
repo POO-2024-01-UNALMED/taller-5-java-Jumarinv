@@ -3,8 +3,8 @@ import java.util.ArrayList;
 public class Ave extends Animal {
 	
 	private static ArrayList<Ave> listado;
-	public int halcones;
-	public int aguilas;
+	public static int halcones;
+	public static int aguilas;
 	private String colorPlumas;
 	
 	public Ave (String nombre, int edad, String habitat, String genero,String colorPlumas) {
@@ -36,7 +36,7 @@ public class Ave extends Animal {
 		
 		listado.add(halcon);
 		
-		this.halcones ++;
+		halcones ++;
 		
 	}
 	
@@ -45,7 +45,22 @@ public class Ave extends Animal {
 		
 		listado.add(aguila);
 		
-		this.aguilas ++;
+		aguilas ++;
+	}
+	
+	public static int getHalcones() {
+		
+		return(halcones);
+	}
+	
+	public static int getAguilas() {
+		
+		return(aguilas);
+	}
+	
+	public String getColorPlumas () {
+		
+		return (this.colorPlumas);
 	}
 
 }

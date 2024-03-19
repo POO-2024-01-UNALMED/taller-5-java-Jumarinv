@@ -44,7 +44,36 @@ public class Animal {
 			return("Mi nombre es " + this.nombre + ", tengo una edad de " + this.edad + ", habito en el habitat " + this.habitat + " y mi genero es " + this.genero);
 		}
 		
-		return ("Mi nombre es " + this.nombre + ", tengo una edad de " + this.edad + ", habito en el habitat " + this.habitat + " y mi genero es " + this.genero + ", la zona en la que me ubico es " + this.zona + ", en el zoo " + this.zona.getZoo());
+		return ("Mi nombre es " + this.nombre + ", tengo una edad de " + this.edad + ", habito en el habitat " + this.habitat + " y mi genero es " + this.genero + ", la zona en la que me ubico es " + this.zona.getNombre() + ", en el zoo " + this.zona.getZoo().getNombre());
+	}
+	
+	public static int getTotalAnimales () {
+		
+		return (totalAnimales);
+	}
+	
+	public String getNombre () {
+		
+		return (this.nombre);
 	}
 
+	public int getEdad () {
+		
+		return (this.edad);
+	}
+	
+	public String getHabitat () {
+		
+		return (this.habitat);
+	}
+	
+	public String getGenero () {
+		
+		return (this.genero);
+	}
+	
+	public Zona getZona () {
+		
+		return (this.zona);
+	}
 }
