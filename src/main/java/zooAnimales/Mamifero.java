@@ -15,15 +15,26 @@ public class Mamifero extends Animal{
 		this.pelaje = pelaje;
 		this.patas = patas;
 		
+		if (listado == null) {
+			
+			listado = new ArrayList<Mamifero>();		
+		}
+		listado.add(this);
+		
 		
 	}
 	
 	public Mamifero () {
 		
+		if (listado == null) {
+			
+			listado = new ArrayList<Mamifero>();		
+		}
+		listado.add(this);
 	}
 	
 	
-	public int cantidadMamiferos () {
+	public static int cantidadMamiferos () {
 		
 		return (listado.size());
 		

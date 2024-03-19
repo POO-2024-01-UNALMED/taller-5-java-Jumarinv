@@ -33,7 +33,8 @@ public class Animal {
 	
 	public static String totalPorTipo () {
 		
-		return(   "Aves: " + Ave.cantidadAves()+
+		return( "Mamiferos: " + Mamifero.cantidadMamiferos() + 
+				"\nAves: " + Ave.cantidadAves()+
 				"\nReptiles: " + Reptil.cantidadReptiles() +
 				"\nPeces: " + Pez.cantidadPeces() + 
 				"\nAnfibios: " + Anfibio.cantidadAnfibios() );
@@ -45,10 +46,10 @@ public class Animal {
 		
 		if (this.zona == null) {
 			
-			return("Mi nombre es " + this.nombre + ", tengo una edad de " + this.edad + ", habito en el habitat " + this.habitat + " y mi genero es " + this.genero);
+			return("Mi nombre es " + this.nombre + ", tengo una edad de " + this.edad + ", habito en " + this.habitat + " y mi genero es " + this.genero);
 		}
 		
-		return ("Mi nombre es " + this.nombre + ", tengo una edad de " + this.edad + ", habito en el habitat " + this.habitat + " y mi genero es " + this.genero + ", la zona en la que me ubico es " + this.zona.getNombre() + ", en el zoo " + this.zona.getZoo().getNombre());
+		return ("Mi nombre es " + this.nombre + ", tengo una edad de " + this.edad + ", habito en " + this.habitat + " y mi genero es " + this.genero + ", la zona en la que me ubico es " + this.zona.getNombre() + ", en el zoo " + this.zona.getZoo().getNombre());
 	}
 	
 	public static int getTotalAnimales () {
@@ -81,19 +82,7 @@ public class Animal {
 		return (this.zona);
 	}
 	
-	public static void main (String[] args) {
-		new Anfibio();
-		new Anfibio();
-		new Mamifero();
-		new Mamifero();
-		new Mamifero();
-		new Reptil();
-		new Pez();
-		new Ave();
-		new Ave();
-		
-		System.out.println(Animal.totalPorTipo());
-	}
+
 }
 
 
