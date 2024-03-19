@@ -34,7 +34,7 @@ public class Anfibio extends Animal{
 		
 	}
 	
-	public static void crearRana (String nombre, int edad, String genero) {
+	public static Anfibio crearRana (String nombre, int edad, String genero) {
 		
 		Anfibio rana = new Anfibio (nombre, edad, "selva", genero, "rojo", true);
 		
@@ -42,15 +42,19 @@ public class Anfibio extends Animal{
 		
 		ranas++;
 		
+		return (rana);
+		
 	}
 	
-	public static void crearSalamandra (String nombre, int edad, String genero) {
+	public static Anfibio crearSalamandra (String nombre, int edad, String genero) {
 		
 		Anfibio salamandra = new Anfibio (nombre, edad, "selva", genero, "negro y amarillo", false);
 		
 		listado.add(salamandra);
 		
 		salamandras++;
+		
+		return (salamandra);
 	}
 
 
