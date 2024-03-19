@@ -15,10 +15,23 @@ public class Anfibio extends Animal{
 		this.colorPiel = colorPiel;
 		this.venenoso = venenoso;
 		
+		if (listado == null) {
+			
+			listado = new ArrayList<Anfibio>();		
+		}
+		
+		listado.add(this);
+		
 	}
 	
 	public Anfibio () {
 		
+		if (listado == null) {
+			
+			listado = new ArrayList<Anfibio>();		
+		}
+		
+		listado.add(this);
 	}
 	
 	public static int cantidadAnfibios () {
@@ -38,7 +51,7 @@ public class Anfibio extends Animal{
 		
 		Anfibio rana = new Anfibio (nombre, edad, "selva", genero, "rojo", true);
 		
-		listado.add(rana);
+	
 		
 		ranas++;
 		
@@ -50,7 +63,7 @@ public class Anfibio extends Animal{
 		
 		Anfibio salamandra = new Anfibio (nombre, edad, "selva", genero, "negro y amarillo", false);
 		
-		listado.add(salamandra);
+
 		
 		salamandras++;
 		

@@ -14,11 +14,25 @@ public class Reptil extends Animal{
 		super(nombre, edad, habitat, genero);
 		this.colorEscamas = colorEscamas;
 		this.largoCola = largoCola;
+		
+		if (listado == null) {
+			
+			listado = new ArrayList<Reptil>();		
+		}
+		
+		listado.add(this);
+		
 	
 	}
 	
 	public Reptil() {
 		
+		if (listado == null) {
+			
+			listado = new ArrayList<Reptil>();		
+		}
+		
+		listado.add(this);
 	}
 	
 	
@@ -38,7 +52,7 @@ public class Reptil extends Animal{
 		
 		Reptil iguana = new Reptil (nombre, edad, "humedal", genero, "verde", 3);
 		
-		listado.add(iguana);
+		
 		
 		iguanas++;
 		
@@ -49,7 +63,7 @@ public class Reptil extends Animal{
 		
 		Reptil serpiente = new Reptil (nombre, edad, "jungla", genero, "blanco", 1);
 		
-		listado.add(serpiente);
+		
 		
 		serpientes++;
 		

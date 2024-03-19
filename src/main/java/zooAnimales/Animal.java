@@ -1,5 +1,6 @@
 package zooAnimales;
 import gestion.Zona;
+import java.util.ArrayList;
 public class Animal {
 	
 	private static int totalAnimales;
@@ -32,7 +33,10 @@ public class Animal {
 	
 	public static String totalPorTipo () {
 		
-		return("Aves: " + Ave.cantidadAves()+"\nReptiles: " + Reptil.cantidadReptiles() + "\nPeces: " + Pez.cantidadPeces() + "\nAnfibios: " + Anfibio.cantidadAnfibios() );
+		return(   "Aves: " + Ave.cantidadAves()+
+				"\nReptiles: " + Reptil.cantidadReptiles() +
+				"\nPeces: " + Pez.cantidadPeces() + 
+				"\nAnfibios: " + Anfibio.cantidadAnfibios() );
 		
 		
 	}
@@ -76,4 +80,20 @@ public class Animal {
 		
 		return (this.zona);
 	}
+	
+	public static void main (String[] args) {
+		new Anfibio();
+		new Anfibio();
+		new Mamifero();
+		new Mamifero();
+		new Mamifero();
+		new Reptil();
+		new Pez();
+		new Ave();
+		new Ave();
+		
+		System.out.println(Animal.totalPorTipo());
+	}
 }
+
+

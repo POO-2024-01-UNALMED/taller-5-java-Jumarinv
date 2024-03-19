@@ -14,11 +14,24 @@ public class Pez extends Animal {
 		super(nombre, edad, habitat, genero);
 		this.colorEscamas = colorEscamas;
 		this.cantidadAletas = cantidadAletas;
+		
+		if (listado == null) {
+			
+			listado = new ArrayList<Pez>();		
+		}
+		
+		listado.add(this);
 	
 	}
 	
 	public Pez () {
 		
+		if (listado == null) {
+			
+			listado = new ArrayList<Pez>();		
+		}
+		
+		listado.add(this);
 	}
 	
 	
@@ -37,7 +50,7 @@ public class Pez extends Animal {
 		
 		Pez salmon = new Pez (nombre, edad, "oceano", genero, "rojo", 6);
 		
-		listado.add(salmon);
+		
 		
 		salmones++;
 		
@@ -48,7 +61,7 @@ public class Pez extends Animal {
 		
 		Pez bacalao = new Pez (nombre, edad, "oceano", genero, "gris", 6);
 		
-		listado.add(bacalao);
+		
 		
 		bacalaos++;
 		

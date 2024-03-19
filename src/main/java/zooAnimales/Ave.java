@@ -11,10 +11,21 @@ public class Ave extends Animal {
 		
 		super(nombre, edad, habitat, genero);
 		this.colorPlumas = colorPlumas;
+		
+		if (listado == null) {
+			
+			listado = new ArrayList<Ave>();		
+		}
+		listado.add(this);
 	
 	}
 	
 	public Ave() {
+		if (listado == null) {
+			
+			listado = new ArrayList<Ave>();		
+		}
+		listado.add(this);
 		
 	}
 	
@@ -34,7 +45,7 @@ public class Ave extends Animal {
 		
 		Ave halcon = new Ave (nombre, edad, "montanas", genero, "cafe glorioso");
 		
-		listado.add(halcon);
+		
 		
 		halcones ++;
 		
@@ -45,7 +56,7 @@ public class Ave extends Animal {
 	public static Ave crearAguila (String nombre, int edad, String genero) {
 		Ave aguila = new Ave (nombre, edad, "montanas", genero, "blanco y amarillo");
 		
-		listado.add(aguila);
+		
 		
 		aguilas ++;
 		
