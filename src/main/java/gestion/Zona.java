@@ -13,6 +13,8 @@ public class Zona {
 		this.nombre = nombre;
 		this.zoo = zoo;
 		
+		this.zoo.agregarZonas(this);
+		
 	}
 	
 	public Zona () {
@@ -20,6 +22,11 @@ public class Zona {
 	}
 	
 	public void agregarAnimales(Animal animal) {
+		
+		if (animales == null) {
+			
+			animales = new ArrayList<Animal>();
+		}
 		
 		animales.add(animal);
 		
